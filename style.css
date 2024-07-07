@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+#grid{
+    border: 1px solid gray;
+    width: 800px;
+    height: 800px;
+}
+
+.row {
+    border: 0px solid paleturquoise;
+    display: flex;
+    width: min-content;
+    margin: 0px;
+    
+}
+
+.col {
+    border: 0px solid palevioletred;
+    margin: 0px;
+}
+
+.cell {
+    border: 1px solid gray;
+    transition: transform .3s ease-in-out;
+}
+
+.cell:hover {
+    background-color: black;
+    opacity: 50%;
+}

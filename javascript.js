@@ -16,13 +16,14 @@ function generateGrid(){
     for(let i = 0; i < split; i++){
         let row = document.createElement("div");
         row.classList.add("row");
-        for(let j = 0; j < split; j++){
+/*        for(let j = 0; j < split; j++){
             const col = document.createElement("div");
             col.classList.add("col");
             col.classList.add("cell");
-            col.style.cssText = `padding: ${document.getElementsByClassName("grid").style.length/split}px;`
+            col.style.cssText = `padding: ${length/split}px;`;
             row.appendChild(col);
         }
+            */
         grid.appendChild(row);
     }
 }
@@ -35,7 +36,7 @@ function deleteGrid(){
 }
 
 changeSizeBtn.onclick = () => {
-    let inputSize = prompt("Input grid size")
+    let inputSize = prompt("Input grid size");
     //console.log(typeof Number(inputSize));
     //if(typeof Number(inputSize) === Number){
         deleteGrid();

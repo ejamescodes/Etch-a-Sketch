@@ -18,19 +18,21 @@ button {
     border: 1px solid gray;
     width: 800px;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .row {
     border: 0px solid paleturquoise;
     display: flex;
-    width: min-content;
     margin: 0px;
-    
+    flex-grow: 1;
 }
 
 .col {
     border: 0px solid palevioletred;
-    margin: 0px;
+    flex-grow: 1;
 }
 
 .cell {
